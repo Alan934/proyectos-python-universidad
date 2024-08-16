@@ -5,14 +5,14 @@ resultados = {
 }
 
 def calcularGoles(resultados):
-    totalGoles_anotados = 0
-    totalGoles_recibidos = 0
+    totalGolesAnotados = 0
+    totalGolesRecibidos = 0
     
     for equipo, (goles_anotados, goles_recibidos) in resultados.items():
-        totalGoles_anotados += goles_anotados
-        totalGoles_recibidos += goles_recibidos
+        totalGolesAnotados += goles_anotados
+        totalGolesRecibidos += goles_recibidos
     
-    return totalGoles_anotados, totalGoles_recibidos
+    return totalGolesAnotados, totalGolesRecibidos
 
 totalAnotados, totalRecibidos = calcularGoles(resultados)
 print(f"Total de goles anotados: {totalAnotados}")
